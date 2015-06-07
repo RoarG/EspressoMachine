@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_button"
+        android:id="@+id/startButton"
+        android:layout_marginBottom="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:text="@string/title_main_screen" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/engineers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/numberPicker_NrEngineers"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/numberPicker_NrEngineers"
+        android:textSize="16dp" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker_NrEngineers"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/workingEngineersText"
+        android:layout_alignStart="@+id/numberPicker_NrEngineers"
+        android:backgroundTint="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:text="@string/busy_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/numberPickerBusyTime"
+        android:layout_alignStart="@+id/numberPickerBusyTime"
+        android:textSize="16dp"
+        android:layout_alignEnd="@+id/numberPickerBusyTime" />
+
+    <TextView
+        android:text="@string/percent_busy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/numberPickerPercentBusy"
+        android:layout_alignStart="@+id/numberPickerPercentBusy"
+        android:textSize="16dp" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPickerPercentBusy"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_dark" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPickerBusyTime"
+        android:layout_alignTop="@+id/numberPickerPercentBusy"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/abc_primary_text_material_dark" />
+
+</RelativeLayout>
